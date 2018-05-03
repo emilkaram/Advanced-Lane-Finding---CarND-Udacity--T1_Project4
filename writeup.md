@@ -150,32 +150,39 @@ These will be the starting point for the left and right lines
 
 I choose the number of sliding windows = 9 and Set height of windows
 Identify the x and y positions of all nonzero pixels in the image
-I set the width of the windows +/- margin = 100 and Set minimum number of pixels found to recenter window=50
-Created a loop to Step through the windows one by one
-Concatenate the arrays of indices , Extract left and right line pixel positions , Fit a second order polynomial to each 
+I set the width of the windows +/- margin = 100 and set minimum number of pixels found to recenter window=50
+created a loop to Step through the windows one by one
+conncatenated the arrays of indices , Extracted left and right line pixel positions and Fitted a second order polynomial 
 
 And here the results
 
  ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/30.png)
 
-# Now I have a new warped binary image 
-# from the next frame of video (also called "binary_warped")
-# It's now much easier to find line pixels!
+#### Now I have a new warped binary image, from the next frame of video, It's now much easier to find line pixels!
+
 And here the results
 
  ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/31.png)
 
 
 
- # Pipeline (video) / disscussion
- ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/33.png)
-I used 2 methods:
-First method to use sliding window through the etire video (process_image function )
-Second method use the sliding window to (process_image2 function) only to find lines on first frame then lines can be estimated this method works ok but with little wobble in couple of spots , to make it perfext I try to recrate lines using sliding window every 50 or 100 frames and results was perfrect 
-Both methods pipeline performed perfectly well on the entire project video  
+## Pipeline (video) / disscussion
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/33.png)
+ 
+Pipeline performed perfectly well on the entire project vide
+o  
 Here's a link to my video result
 https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/video_output.mp4
 
  
+## Discussion
+I used 2 methods:
+First method to use sliding window through the etire video (process_image function )
+
+Second method use the sliding window to (process_image2 function) only to find lines on first frame then lines can be estimated this method works ok but with little wobble in couple of spots , to make it perfext I try to recrate lines using sliding window every 50 or 100 frames and results was perfrect 
+
+Both methods pipeline performed perfectly well on the entire project video  
  
+For the challenge_video and harder_challenge_video videos, Pipeline did not perform well, got wobbley lines in few spots and missied the lanes on other spots
+For future improvment I am thinking to apply mask on the area of interest so i can filter out extra side lanes craeted by road middle barrier and the edge of the road due to sun shadow. also can filter by color (white and yellow).
 
