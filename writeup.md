@@ -30,7 +30,7 @@ I looped through the claibration images (after converting to gray scale) and fin
 Then I did Camera calibarion (find camera matrix and distortion coefficient)
 Using the object points and image points mapping I can compute camera matrix and distortion coefficient using cv2.calibrateCamera
 
-and here is a sample of the resuls
+Here an examples of a distortion corrected calibration image
 
 ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/2.png)
 
@@ -41,7 +41,7 @@ and here is a sample of the resuls
 I applied camera matrix and distortion coefficient to the test image using the cv2.undistort() function and obtained this result:
 
 
-  Here an examples of a distortion corrected calibration image.
+  Here an examples of a distortion corrected image
 
 ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/3.png)
 
