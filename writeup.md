@@ -169,9 +169,10 @@ And here the results
 ## Pipeline (video) / disscussion
 ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/33.png)
  
-Pipeline performed perfectly well on the entire project vide
-o  
+Pipeline performed perfectly well on the entire project video  
+
 Here's a link to my video result
+
 https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/video_output.mp4
 
  
