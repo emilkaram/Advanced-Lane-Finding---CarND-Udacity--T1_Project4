@@ -74,22 +74,28 @@ Absolute Sobel y gradient
 ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/10.png)
 
 Magnitude of Gradient
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/11.png)
+
 Direction of Gradient
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/12.png)
 
 Combined Gradients:
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/13.png) 
+
  
-
-
 ## Combine Color and Gradient thresholds
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/14.png)
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/15.png)
 
-Finaly I decide to combine color thresholds and gradients , I used S binary and R binary , Sobel X binary , Sobel y binary , Magnitude of Gradient binary ,
-Direction of Gradient binary 
+Finaly I decide to combine color thresholds and gradients , I used S binary and R binary , Sobel X binary , Sobel y binary , Magnitude of Gradient binary ,Direction of Gradient binary 
 
 I tried different mathematical comnination using “AND”  “ OR” function 
 And here the final combination :
 combined_binary[(S_binary==1)&(R_binary==1)|((x_binary_output==1)&(y_binary_output==1))|((mag_binary_output==1)&(dir_binary_output==1))]=1
 
  here is example of the Combine Color and Gradient thresholds applied to test image
+ 
+ ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/16.png)
 
 
 
