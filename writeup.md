@@ -114,8 +114,11 @@ Then defined 4 points to be used as destination point in perspective transform
 
 I calculated the perspective matrix M to warp an image using M=cv2.getPerspectiveTransform(src,dst)
 and also the inverse matrix Minv using  Minv=cv2.getPerspectiveTransform(dst,src)
-I calculated wrap and unrap fuction using
+
+I calculated wrap and unrap fuction using 
+
 warped = cv2.warpPerspective(img,M,img_size,flags = cv2.INTER_LINEAR)
+
 unwarped = cv2.warpPerspective(img,Minv,img_size,flags = cv2.INTER_LINEAR)
 
 I verified that my perspective transform was working as expected by drawing the src and dst points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
