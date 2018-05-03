@@ -107,9 +107,9 @@ combined_binary[(S_binary==1)&(R_binary==1)|((x_binary_output==1)&(y_binary_outp
 I defined 4 points to be used as source point in perspective transform
 Then defined 4 points to be used as destination point in perspective transform
 
- ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/17.png)
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/17.png)
 
- ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/18.png)
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/18.png)
 
 
 I calculated the perspective matrix M to warp an image using M=cv2.getPerspectiveTransform(src,dst)
