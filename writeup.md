@@ -180,7 +180,9 @@ https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blo
 I used 2 methods:
 First method to use sliding window through the etire video (process_image function )
 
-Second method use the sliding window to (process_image2 function) only to find lines on first frame then lines can be estimated this method works ok but with little wobble in couple of spots , to make it perfext I try to recrate lines using sliding window every 50 or 100 frames and results was perfrect 
+Second method use the sliding window to (process_image2 function) only to find lines on first frame then lines can be estimated 
+
+this method works well but with little line wobble in couple of spots , to make it perfect I try to re-create lines using sliding window every 50 or 100 frames and results was perfrect.
 
 Both methods pipeline performed perfectly well on the entire project video  
  
