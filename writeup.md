@@ -1,5 +1,5 @@
-### Advanced lane finding project
-## This project to find lane lines using advanced computer vision techniques.
+# Advanced lane finding project
+### This project to find lane lines using advanced computer vision techniques.
 ________________________________________
 *Advanced Lane Finding Project
 The goals / steps of this project are the following:
