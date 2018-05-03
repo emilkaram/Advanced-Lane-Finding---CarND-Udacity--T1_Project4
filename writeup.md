@@ -1,5 +1,8 @@
 # Advanced lane finding project
 ### This project to find lane lines using advanced computer vision techniques.
+
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/video_output.png)
+
 ________________________________________
 *Advanced Lane Finding Project
 The goals / steps of this project are the following:
@@ -135,12 +138,17 @@ here examples for warped fuction alliped to test images
 
 
 and here all the steps applied to test images (camera calibration ,distcotion correction , color theroshld , gradient and warped)
-
+ ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/27.png)
+ ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/32.png)
+ 
 
 ## Final step is to Locate the lane lines and fit polynomial (Sliding window)
 l saved the warped binary image in "binary_warped" and take a histogram of the bottom half of the image 
 I found the peak of the left and right halves of the histogram
- These will be the starting point for the left and right lines
+ ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/29.png)
+ ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/28.png)
+
+These will be the starting point for the left and right lines
 
 I choose the number of sliding windows = 9 and Set height of windows
 Identify the x and y positions of all nonzero pixels in the image
@@ -150,29 +158,25 @@ Concatenate the arrays of indices , Extract left and right line pixel positions 
 
 And here the results
 
+ ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/30.png)
 
 # Now I have a new warped binary image 
 # from the next frame of video (also called "binary_warped")
 # It's now much easier to find line pixels!
 And here the results
 
+ ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/31.png)
 
 
 
-
- 
- 
- 
-   :
- 
-________________________________________
-# Pipeline (video) / disscussion
+ # Pipeline (video) / disscussion
 I used 2 methods:
 First method to use sliding window through the etire video (process_image function )
 Second method use the sliding window to (process_image2 function) only to find lines on first frame then lines can be estimated this method works ok but with little wobble in couple of spots , to make it perfext I try to recrate lines using sliding window every 50 or 100 frames and results was perfrect 
 Both methods pipeline performed perfectly well on the entire project video  
 Here's a link to my video result
-________________________________________
+https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/video_output.mp4
+
  
  
 
