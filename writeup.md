@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 Rubric Points
 Here I will consider the rubric points individually and describe how I addressed each point in my implementation.
 ________________________________________
-### Camera Calibration and Distortion correction
+# Camera Calibration and Distortion correction
 I computed the camera matrix and distortion coefficients by:
 a.	Find corners on chessborad calibration images:
 
@@ -27,7 +27,7 @@ loop through the claibration images (after converting to gray scale) and find co
 b.	Camera calibarion (find camera matrix and distortion coefficient)
 Using the object points and image points mapping I can compute camera matrix and distortion coefficient using cv2.calibrateCamera
 
-### Pipeline (single images)
+# Pipeline (single images)
 
 ## Distortion correction
 I applied camera matrix and distortion coefficient to the test image using the cv2.undistort() function and obtained this result:
@@ -39,6 +39,7 @@ I applied camera matrix and distortion coefficient to the test image using the c
 
 ## Gradianet Threshold and Color Threshold
 I tested color threshold and gradient threshold on test images to decside the best comniation to use in my pipline
+
 
 ## Color Threshold
 
@@ -81,7 +82,7 @@ combined_binary[(S_binary==1)&(R_binary==1)|((x_binary_output==1)&(y_binary_outp
 
 
 
-### Perspective Transform:
+# Perspective Transform:
 
 I defined 4 points to be used as source point in perspective transform
 Then defined 4 points to be used as destination point in perspective transform
@@ -109,7 +110,7 @@ here examples for warped fuction alliped to test images
 and here all the steps applied to test images (camera calibration ,distcotion correction , color theroshld , gradient and warped)
 
 
-### Final step is to Locate the lane lines and fit polynomial (Sliding window)
+## Final step is to Locate the lane lines and fit polynomial (Sliding window)
 l saved the warped binary image in "binary_warped" and take a histogram of the bottom half of the image 
 I found the peak of the left and right halves of the histogram
  These will be the starting point for the left and right lines
@@ -138,7 +139,7 @@ And here the results
    :
  
 ________________________________________
-### Pipeline (video) / disscussion
+# Pipeline (video) / disscussion
 I used 2 methods:
 First method to use sliding window through the etire video (process_image function )
 Second method use the sliding window to (process_image2 function) only to find lines on first frame then lines can be estimated this method works ok but with little wobble in couple of spots , to make it perfext I try to recrate lines using sliding window every 50 or 100 frames and results was perfrect 
