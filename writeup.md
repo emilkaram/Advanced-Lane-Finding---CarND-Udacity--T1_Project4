@@ -24,8 +24,14 @@ objpoints = []
 imgpoints = []
 loop through the claibration images (after converting to gray scale) and find corner and display corners on the image using cv2.findChessboardCorners and draw the corners using cv2.drawChessboardCorners
 
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/1.png)
+
+
 b.	Camera calibarion (find camera matrix and distortion coefficient)
 Using the object points and image points mapping I can compute camera matrix and distortion coefficient using cv2.calibrateCamera
+
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/2.png)
+
 
 # Pipeline (single images)
 
@@ -35,7 +41,7 @@ I applied camera matrix and distortion coefficient to the test image using the c
 
   Here an examples of a distortion corrected calibration image.
 
-
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/3.png)
 
 ## Gradianet Threshold and Color Threshold
 I tested color threshold and gradient threshold on test images to decside the best comniation to use in my pipline
@@ -44,9 +50,10 @@ I tested color threshold and gradient threshold on test images to decside the be
 ## Color Threshold
 
 Gray and Gray binary:
-
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/4.png)
 
 RGB
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/5.png)
 
 R and R binary
 
