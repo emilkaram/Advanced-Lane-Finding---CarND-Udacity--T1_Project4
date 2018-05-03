@@ -19,13 +19,10 @@ Rubric Points
 Here I will consider the rubric points individually and describe how I addressed each point in my implementation.
 ________________________________________
 # Camera Calibration and Distortion correction
-I computed the camera matrix and distortion coefficients by:
-a.	Find corners on chessborad calibration images:
-
-Set arrays to store object points(Distorted points) and image points (undistorted image) from all the images
-objpoints = [] 
-imgpoints = []
-loop through the claibration images (after converting to gray scale) and find corner and display corners on the image using cv2.findChessboardCorners and draw the corners using cv2.drawChessboardCorners
+I computed the camera matrix and distortion coefficients by finding corners on chessborad calibration images
+I set arrays to store object points(Distorted points) and image points (undistorted image) from all the images
+objpoints = [] , imgpoints = []
+I looped through the claibration images (after converting to gray scale) and find corner and display corners on the image using cv2.findChessboardCorners and draw the corners using cv2.drawChessboardCorners
 
 ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/1.png)
 
