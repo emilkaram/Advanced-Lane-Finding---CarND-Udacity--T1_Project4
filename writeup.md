@@ -95,7 +95,7 @@ I tried different mathematical combnination using “AND”  “ OR” function
 And here the final combination :
 combined_binary[(S_binary==1)&(R_binary==1)|((x_binary_output==1)&(y_binary_output==1))|((mag_binary_output==1)&(dir_binary_output==1))]=1
 
- here is example of the Combine Color and Gradient thresholds applied to test image
+ here is example of the Combined Color and Gradient thresholds applied to test image
  
  ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/16.png)
 
