@@ -30,6 +30,8 @@ I looped through the claibration images (after converting to gray scale) and fin
 Then I did Camera calibarion (find camera matrix and distortion coefficient)
 Using the object points and image points mapping I can compute camera matrix and distortion coefficient using cv2.calibrateCamera
 
+and here is a sample of the resuls
+
 ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/2.png)
 
 
