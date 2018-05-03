@@ -91,7 +91,7 @@ Combined Gradients:
 
 Finaly I decide to combine color thresholds and gradients , I used S binary and R binary , Sobel X binary , Sobel y binary , Magnitude of Gradient binary ,Direction of Gradient binary 
 
-I tried different mathematical comnination using “AND”  “ OR” function 
+I tried different mathematical combnination using “AND”  “ OR” function 
 And here the final combination :
 combined_binary[(S_binary==1)&(R_binary==1)|((x_binary_output==1)&(y_binary_output==1))|((mag_binary_output==1)&(dir_binary_output==1))]=1
 
