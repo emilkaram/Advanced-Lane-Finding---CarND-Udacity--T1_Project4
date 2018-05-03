@@ -56,17 +56,22 @@ RGB
 ![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/5.png)
 
 R and R binary
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/6.png)
 
 HLS
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/7.png)
 
 S and S binary
-
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/8.png)
 
 
 ## Gradianet Threshold:
  
 Absolute Sobel x gradient
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/9.png)
+
 Absolute Sobel y gradient
+![](https://github.com/emilkaram/Advanced-Lane-Finding-CarND-Udacity-T1_Project4/blob/master/images/10.png)
 
 Magnitude of Gradient
 Direction of Gradient
